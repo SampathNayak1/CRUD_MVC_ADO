@@ -1,0 +1,6 @@
+@AddingRecordsADO_HostAddress = http://localhost:5287
+
+GET {{AddingRecordsADO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,37 @@
+﻿@model CRUD_MVC_ADO.Models.EmpInfo
+
+<h2>Add Employee</h2>
+
+@using (Html.BeginForm())
+{
+    <table style=" border-radius:1px; color:black">
+     
+        <tr>
+            <td>@Html.LabelFor(e => e.EmpId) </td>
+            <td>@Html.EditorFor(e => e.EmpId)</td>
+            <td>@Html.ValidationMessageFor(e=>e.EmpId)</td>
+
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(e => e.EmpName)</td>
+            <td>@Html.EditorFor(e => e.EmpName)</td>
+            <td>@Html.ValidationMessageFor(e=>e.EmpName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(e => e.City)</td>
+            <td>@Html.EditorFor(e => e.City)</td>
+            <td>@Html.ValidationMessageFor(e=>e.City)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(e => e.Address) </td>
+            <td>@Html.EditorFor(e => e.Address)</td>
+            <td>@Html.ValidationMessageFor(e=>e.Address)</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Save" />
+            </td>
+        </tr>
+    </table>
+}
+
